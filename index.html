@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JohuTube | Watch Vidoes On JohuTube</title>
+    <meta
+      name="description"
+      content="Search a video, Explore a video, Watch a video, Share a video"
+    />
+    <meta name="keywords" content="Video, JohuTube, videos watch" />
+    <meta name="author" content="Shejan Mahamud" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./styles/main.css" />
+    <!-- favicon link -->
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <!-- body added -->
+  <body class="w-full h-auto font-inter">
+    <header class="w-[90%] mx-auto my-5">
+      <nav class="w-full flex items-center justify-between">
+        <div class="flex items-center gap-1">
+          <img src="./assets/icons/favicon.png" alt="logo.png" class="w-12" />
+          <p class="text-3xl font-semibold">
+            Johu<span class="text-red-500">Tube</span>
+          </p>
+        </div>
+        <button class="bg-gray-300 text-black rounded-xl font-medium px-6 py-3">
+          Sort By View
+        </button>
+        <button class="bg-red-500 text-white rounded-xl font-medium px-6 py-3">
+          Sign in
+        </button>
+      </nav>
+      <hr class="w-full border-gray-200 rounded-full border my-10" />
+      <div class="flex items-center mx-auto w-full gap-5 justify-center">
+        <button
+          class="bg-[#25252526] px-4 py-2 text-[#252525b3] font-medium text-sm focus:bg-red-500 focus:text-white"
+          onclick="loadVidoes(1000)"
+        >
+          All
+        </button>
+        <button
+          class="bg-[#25252526] px-4 py-2 text-[#252525b3] font-medium text-sm focus:bg-red-500 focus:text-white"
+          onclick="loadVidoes(1001)"
+        >
+          Music
+        </button>
+        <button
+          class="bg-[#25252526] px-4 py-2 text-[#252525b3] font-medium text-sm focus:bg-red-500 focus:text-white"
+          onclick="loadVidoes(1003)"
+        >
+          Comedy
+        </button>
+        <button
+          class="bg-[#25252526] px-4 py-2 text-[#252525b3] font-medium text-sm focus:bg-red-500 focus:text-white"
+          onclick="loadVidoes(1005)"
+        >
+          Drawing
+        </button>
+      </div>
+    </header>
+    <!-- main section added -->
+    <main class="w-[90%] mx-auto my-10">
+      <section
+        class="w-full grid grid-cols-4 row-auto items-center gap-10"
+        id="videos-container"
+      ></section>
+    </main>
+    <!-- js added -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
